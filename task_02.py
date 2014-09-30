@@ -4,7 +4,9 @@
 Task_02:Loan Calculator Revisited
 """
 
+
 from decimal import Decimal
+
 
 def get_interest_rate(principal, duration, prequalification):
     """Returns the interest rate"""
@@ -53,7 +55,7 @@ def get_interest_rate(principal, duration, prequalification):
 
 def compound_interest(principal, duration, rate, interval=12):
     """Returns the compound interest"""
-        if RATE is not None:
+    if RATE is not None:
         RATE = Decimal(RATE)
         return principal * ((1 + RATE / interval) ** (interval * duration))
     return None
@@ -61,7 +63,7 @@ def compound_interest(principal, duration, rate, interval=12):
 
 def calculate_total(principal, duration, prequalification):
     """Returns the calculated TOTAL"""
-    TOTAL=0
+    TOTAL = 0
     INTERESTRATE = get_interest_rate(principal, duration, prequalification)
     if INTERESTRATE is not None:
         TOTAL = compound_interest(principal, duration, INTERESTRATE)
@@ -71,7 +73,7 @@ def calculate_total(principal, duration, prequalification):
 
 def calculate_interest(principal, duration, prequalification):
     """Returns the calculated interest"""
-    TOTAL=0
+    TOTAL = 0
     INTERESTRATE = get_interest_rate(principal, duration, prequalification)
     TOTAL = compound_interest(principal, duration, INTERESTRATE)
     if INTERESTRATE is not None:
