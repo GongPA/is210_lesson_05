@@ -4,24 +4,20 @@
 Task_03:Transforming Data
 """
 
-def celsius_to_fahrenheit(temperature): # convert C to F
-   
-   
+def celsius_to_fahrenheit(temperature): 
+   """convert C to F"""
     FAHRENHEIT = (temperature * 9) / 5 + 32
-    return round(float(FAHRENHEIT),1)# only need 1 afetr decimal
+    return round (float(FAHRENHEIT),1)  # only need 1 afetr decimal
 
 
-def fahrenheit_to_celsius(temperature): # convert F to C
-    
-    
-    CELSIUS =(temperature - 32)*5 / 9
-    return round(float(CELSIUS),1) # only need 1 afetr decimal
+def fahrenheit_to_celsius(temperature): 
+   """ convert F to C"""
+     CELSIUS =(temperature - 32)*5 / 9
+    return round (float(CELSIUS),1)  # only need 1 afetr decimal
 
 
-def convert_temperature(temperature, output_format='c'):  # Function recall functions
-    
-    
-    
+def convert_temperature(temperature, output_format='c'): 
+   """ Function recall functions"""
     if isinstance(temperature, basestring):
         TEMP = float(temperature[0:-1])
         DEGREE_TYPE = temperature[-1].lower()
