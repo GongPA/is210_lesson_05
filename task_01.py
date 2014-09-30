@@ -5,12 +5,12 @@ Task 01: Defining a Function
 """
 
 def bool_to_str(bvalue, short=False):
-    if bvalue = True:
+    if bvalue is True:
         if not short:
             return 'Yes'
         else:
             return 'Y'
-    elif bvalue = False:
+    elif bvalue is False:
         if not short:
             return 'No'
         else:
