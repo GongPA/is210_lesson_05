@@ -8,7 +8,7 @@ from decimal import Decimal
 
 def get_interest_rate(principal, duration, prequalification):
     # Returns the interest rate
-    RATE = 0
+    RATE = None
     if principal >= 0 and principal <= 199999:
         if duration >= 1 and duration <= 15:
             if prequalification:
