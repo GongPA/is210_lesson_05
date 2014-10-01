@@ -63,19 +63,19 @@ def compound_interest(principal, duration, rate, interval=12):
 
 def calculate_total(principal, duration, prequalification):
     """Returns the calculated TOTAL"""
-    TOTAL = 0
-    INTERESTrate = get_interest_rate(principal, duration, prequalification)
-    if INTERESTrate is not None:
-        TOTAL = compound_interest(principal, duration, INTERESTrate)
-        return int(round(TOTAL))
+    total = 0
+    interestrate = get_interest_rate(principal, duration, prequalification)
+    if interestrate is not None:
+        total = compound_interest(principal, duration, INTERESTrate)
+        return int(round(total))
     return None
 
 
 def calculate_interest(principal, duration, prequalification):
     """Returns the calculated interest"""
-    TOTAL = 0
-    INTERESTrate = get_interest_rate(principal, duration, prequalification)
-    TOTAL = compound_interest(principal, duration, INTERESTrate)
-    if INTERESTrate is not None:
-        return int(round(TOTAL - principal))
+    total = 0
+    interestrate = get_interest_rate(principal, duration, prequalification)
+    total = compound_interest(principal, duration, INTERESTrate)
+    if interestrate is not None:
+        return int(round(total - principal))
     return None
