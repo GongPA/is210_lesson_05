@@ -25,14 +25,14 @@ if isinstance(temperature, basestring):
 else:
     return None
 
-if OUTPUT_FORMAT == 'f':
+if iutput_format == 'f':
     if DEGREE_TYPE == 'c':
         return celsius_to_fahrenheit(TEMP)
     elif DEGREE_TYPE == 'f':
         return TEMP
     else:
         return None
-elif OUTPUT_FORMAT == 'c':
+elif output_format == 'c':
         if DEGREE_TYPE == 'f':
             return fahrenheit_to_celsius(TEMP)
         elif DEGREE_TYPE == 'c':
