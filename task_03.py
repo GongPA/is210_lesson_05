@@ -33,9 +33,9 @@ if iutput_format == 'f':
     else:
         return None
 elif output_format == 'c':
-        if DEGREE_TYPE == 'f':
-            return fahrenheit_to_celsius(TEMP)
-        elif DEGREE_TYPE == 'c':
-            return TEMP
+    if DEGREE_TYPE == 'f':
+        return fahrenheit_to_celsius(TEMP)
+    elif DEGREE_TYPE == 'c':
+        return TEMP
     else:
         return None
