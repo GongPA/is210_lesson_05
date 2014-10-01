@@ -32,7 +32,7 @@ if OUTPUT_FORMAT == 'f':
         return TEMP
     else:
         return None
-    elif OUTPUT_FORMAT == 'c':
+elif OUTPUT_FORMAT == 'c':
         if DEGREE_TYPE == 'f':
             return fahrenheit_to_celsius(TEMP)
         elif DEGREE_TYPE == 'c':
