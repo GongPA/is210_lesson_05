@@ -21,7 +21,7 @@ def convert_temperature(temperature, output_format='c'):
     """ Function recall functions"""
     temp = None
     degree_type = None
-    
+
     if isinstance(temperature, basestring):
         temp = float(temperature[0:-1])
         degree_type = temperature[-1].lower()
