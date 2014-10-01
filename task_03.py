@@ -20,8 +20,8 @@ def fahrenheit_to_celsius(temperature):
 def convert_temperature(temperature, output_format='c'):
     """ Function recall functions"""
     if isinstance(temperature, basestring):
-    TEMP = float(temperature[0:-1])
-    DEGREE_TYPE = temperature[-1].lower()
+        TEMP = float(temperature[0:-1])
+        DEGREE_TYPE = temperature[-1].lower()
     else:
         return None
 
